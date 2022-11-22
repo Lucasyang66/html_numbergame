@@ -21,7 +21,7 @@ function randomNumber(){
     num1=Math.floor(Math.random()*18+18);
     num2=Math.floor(Math.random()*18+18);
     num3=Math.floor(Math.random()*18+18);
-    num4=Math.floor(Math.random()*880+320);
+    num4=Math.floor(Math.random()*980+320);
 };
 function reloadnumber(){
     var randombtn = ["btn1","btn2","btn3","btn4"];
