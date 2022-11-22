@@ -8,7 +8,7 @@ div {text-align: center;}
     padding: 8px;
     padding-left:30px;
     padding-right:30px;
-    border-radius: 12px;
+    border-radius: 20px;
     margin:10px;
     cursor: pointer;
 }
@@ -16,7 +16,7 @@ div {text-align: center;}
     margin-top:50px;
     padding:15px;
     color:white;
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight:bold;
     font-size:50px;
     background-color: #0D6CBE;
