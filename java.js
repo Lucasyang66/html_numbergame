@@ -21,14 +21,23 @@ function randomNumber(){
     num1=Math.floor(Math.random()*18+18);
     num2=Math.floor(Math.random()*18+18);
     num3=Math.floor(Math.random()*18+18);
-    num4=Math.floor(Math.random()*700+400);
+    num4=Math.floor(Math.random()*880+320);
 };
 function reloadnumber(){
-    document.getElementById("btn1").innerText=num1;
-    document.getElementById("btn2").innerText=num2;
-    document.getElementById("btn3").innerText=num3;
-    document.getElementById("btn4").innerText="√"+num4;
-}
+    var randombtn = ["btn1","btn2","btn3","btn4"];
+    var numlist = [num1,num2,num3,num4];
+    for (i=4;i>0;i--) {
+        var randomnum = Math.round(Math.random()*(i-1));
+        listsplice = randombtn.splice(i-1,1,randombtn[randomnum]);
+        randombtn[randomnum]=listsplice;
+        if (String(numlist[i-1]).length>=3){
+            document.getElementById(randombtn[i-1]).innerText="√"+numlist[i-1];
+        }else{
+            document.getElementById(randombtn[i-1]).innerText=numlist[i-1];
+        };
+        randombtn.pop();
+    };
+};
 function mouseover(elem){
     elem.style=elem.style+";background-color: #094f8b;"
 };
