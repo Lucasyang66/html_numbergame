@@ -15,6 +15,15 @@ body {
     margin:10px;
     cursor: pointer;
 }
+.whitebackgroud{
+    background-color: #ffffff;
+    padding-top: 40px;
+    margin-block-start: 100px;
+    margin-inline-start: 650px;
+    margin-inline-end: 650px;
+    border-radius: 5px;
+    padding-bottom: 40px;
+}
 .text{
     margin-top:50px;
     padding:15px;
