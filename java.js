@@ -62,13 +62,13 @@ function showanswer(){
 };
 function on_click_next(){
     if(done){
-	    showanswer();
-        randomNumber();
-        reloadnumber();
+	showanswer();
+	randomNumber();
+	reloadnumber();
         reloadhorl();
         get_min();
         get_max();
-	    done=false;	  
+	done=false;	  
     }
 };
 function on_click_answer(elem){
