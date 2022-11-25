@@ -62,13 +62,13 @@ function showanswer(){
 };
 function on_click_next(){
     if(done){
-	  showanswer();
+	    showanswer();
         randomNumber();
         reloadnumber();
         reloadhorl();
         get_min();
         get_max();
-	  done=false;	  
+	    done=false;	  
     }
 };
 function on_click_answer(elem){
@@ -80,7 +80,7 @@ function on_click_answer(elem){
     };
     if(answer == get_min() && HorL==0||answer == get_max() && HorL==1){
         answer_text.innerText="Your Right!"
-	  done = true;
+	    done = true;
     } else{
         answer_text.innerText="Your wrong!"
     };
