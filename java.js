@@ -60,22 +60,29 @@ function showanswer(){
         answer_text.innerText="the highest number is " + get_max() ;
     };
 };
-function on_click(elem){
+function on_click_next(){
+    if(done){
+	  showanswer();
+        randomNumber();
+        reloadnumber();
+        reloadhorl();
+        get_min();
+        get_max();
+	  done=false;	  
+    }
+};
+function on_click_answer(elem){
+    answer_text=document.getElementById("answer_text");
     console.log(typeof elem.innerText);
     var answer = elem.innerText;
     if(answer.length > 2){
             answer=Math.sqrt(Math.abs(num4));
     };
     if(answer == get_min() && HorL==0||answer == get_max() && HorL==1){
-        alert("Your Right!");
-        showanswer();
-        randomNumber();
-        reloadnumber();
-        reloadhorl();
-        get_min();
-        get_max();
+        answer_text.innerText="Your Right!"
+	  done = true;
     } else{
-        alert("Your Wrong!");
+        answer_text.innerText="Your wrong!"
     };
     console.log(answer);
 };
