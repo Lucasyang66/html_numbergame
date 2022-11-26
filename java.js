@@ -38,12 +38,6 @@ function reloadnumber(){
         randombtn.pop();
     };
 };
-function mouseover(elem){
-    elem.style=elem.style+";background-color: #094f8b;"
-};
-function mouseout(elem){
-    elem.style=elem.style+";background-color: #0D6CBE;"
-};
 randomNumber();
 reloadnumber();
 function get_min(){
@@ -62,13 +56,13 @@ function showanswer(){
 };
 function on_click_next(){
     if(done){
-	showanswer();
-	randomNumber();
-	reloadnumber();
+        showanswer();
+        randomNumber();
+        reloadnumber();
         reloadhorl();
         get_min();
         get_max();
-	done=false;	  
+        done=false;	  
     }
 };
 function on_click_answer(elem){

@@ -10,17 +10,18 @@
             <h1 id="numtitle" style="font-weight:bold;font-size: 60px;"></h1>
             <br>
             <div>
-                <span class="btn" id="btn1" onclick="on_click_answer(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></span>
-                <span class="btn" id="btn2" onclick="on_click_answer(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></span>
-                <span class="btn" id="btn3" onclick="on_click_answer(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></span>
-                <span class="btn" id="btn4" onclick="on_click_answer(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></span>
+                <div class="btndiv">
+                    <button class="btn choice" id="btn1" onclick="on_click_answer(this)" ></button>
+                    <button class="btn choice" id="btn2" onclick="on_click_answer(this)"></button>
+                </div>
+                <div class="btndiv">
+                    <button class="btn choice" id="btn3" onclick="on_click_answer(this)"></button>
+                    <button class="btn choice" id="btn4" onclick="on_click_answer(this)"></button>
+                </div>
             </div>
-            <br>
 	        <div>
                 <br>
-                <br>
-                <br>
-                <span class="btn" id="btnnext" onclick="on_click_next()" onmouseover="mouseover(this)" onmouseout="mouseout(this)">next</span>
+                <button class="btn next" id="btnnext" onclick="on_click_next()" style="width: 200px; padding: 20px;">next</button>
                 <div>
                     <h1 class="text" id="answer_text">
                         <br>

@@ -1,20 +1,49 @@
 h1 {text-align: center;}
 span {text-align: center;}
+button {
+    text-align: center; 
+    padding: 100px; 
+    width:400px;
+}
 div {text-align: center;}
 body {
     background-color: #e2e2e2;
 }
+.btndiv{
+    margin-block: 10px;
+}
 .btn{
+    transition-duration: 0.4s;
     font-size:50px;
-    background-color: #0D6CBE;
     color:white;
-    padding: 8px;
-    padding-left:30px;
-    padding-right:30px;
-    border-radius: 10px;
-    margin:10px;
+    border-radius: 8px;
     cursor: pointer;
 }
+.next{
+    box-shadow: 0 6px 0 0 #008609;
+    border: #00ca0d;
+    background-color: #00ca0d;
+    padding: 50px;
+    padding-left:50px;
+    padding-right:50px;
+    margin:10px;
+}
+.choice{
+    border: #0D6CBE;
+    box-shadow: 0 6px 0 0 #06457b;
+    background-color: #0D6CBE;
+    padding: 50px;
+    padding-left:50px;
+    padding-right:50px;
+    margin:10px;
+}
+.next:hover{
+    background-color: #00920a;
+}
+.choice:hover{
+    background-color: #094f8b;
+}
+
 .whitebackgroud{
     background-color: #ffffff;
     padding-top: 40px;
