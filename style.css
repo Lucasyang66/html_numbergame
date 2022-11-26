@@ -12,6 +12,28 @@ body {
 .btndiv{
     margin-block: 10px;
 }
+.next:hover{
+    transition: 0.3s;
+    transform: translateY(2px);
+    box-shadow: 0 8px 0 0 #008609;
+    background-color: #00920a;
+}
+.choice:hover{
+    transition: 0.3s;
+    transform: translateY(2px);
+    box-shadow: 0 8px 0 0 #06457b;
+    background-color: #094f8b;
+}
+.choice:active{
+    transition: 0.15s;
+    transform: translateY(8px);
+    box-shadow:0 2px 0 0 #06457b;
+}
+.next:active{
+    transition: 0.15s;
+    transform: translateY(8px);
+    box-shadow: 0 2px 0 0 #008609;
+}
 .btn{
     transition-duration: 0.4s;
     font-size:50px;
@@ -20,7 +42,7 @@ body {
     cursor: pointer;
 }
 .next{
-    box-shadow: 0 6px 0 0 #008609;
+    box-shadow: 0 10px 0 0 #008609;
     border: #00ca0d;
     background-color: #00ca0d;
     padding: 50px;
@@ -30,20 +52,13 @@ body {
 }
 .choice{
     border: #0D6CBE;
-    box-shadow: 0 6px 0 0 #06457b;
+    box-shadow: 0 10px 0 0 #06457b;
     background-color: #0D6CBE;
     padding: 50px;
     padding-left:50px;
     padding-right:50px;
     margin:10px;
 }
-.next:hover{
-    background-color: #00920a;
-}
-.choice:hover{
-    background-color: #094f8b;
-}
-
 .whitebackgroud{
     background-color: #ffffff;
     padding-top: 40px;
